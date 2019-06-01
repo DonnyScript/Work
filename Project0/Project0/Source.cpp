@@ -12,8 +12,6 @@ int main()
 	int redchoice;
 	int totalWin = 0;
 	int ticketPri = 0;
-	
-
 
 	do
 	{
@@ -25,8 +23,6 @@ int main()
 		cout << "'q' to quit: " << endl; 
 
 		
-		
-
 		cin >> choice;
 		checkChoice(&choice);
 
@@ -36,85 +32,83 @@ int main()
 		switch (choice)
 		{
 
-
-		case 'p':
-		{
-			
-			for (int i = 0; i < 5; i++)
+			case 'p':
 			{
-				cout << "Choose number 1-69 and no duplicates: ";
-				cin >> num[i];
-			}
-			for (int i = 0; i < 5; i++)
-			{
-				for (int j = 0; j < 5; j++)
+				
+				for (int i = 0; i < 5; i++)
 				{
-					if (j != i)
+					cout << "Choose number 1-69 and no duplicates: ";
+					cin >> num[i];
+				}
+				for (int i = 0; i < 5; i++)
+				{
+					for (int j = 0; j < 5; j++)
 					{
-						while (num[i] == num[j])
+						if (j != i)
 						{
-							cout << "Re-enter number: ";
-							cin >> num[j];
+							while (num[i] == num[j])
+							{
+								cout << "Re-enter number: ";
+								cin >> num[j];
+							}
 						}
 					}
 				}
+
+				cout << "Now pick your red ball number only 1-26 and no duplicates: ";
+				cin >> redchoice;
+
+				PowerBallTicket ticket1(num[0], num[1], num[2], num[3], num[4], redchoice);
+				ticketPri = ticketPri + 2;
+				totalWin = totalWin + ticket1.WinningTicket(WinTicket);
+				break;
+			
 			}
 
-			cout << "Now pick your red ball number only 1-26 and no duplicates: ";
-			cin >> redchoice;
-
-			PowerBallTicket ticket1(num[0], num[1], num[2], num[3], num[4], redchoice);
-			ticketPri = ticketPri + 2;
-			totalWin = totalWin + ticket1.WinningTicket(WinTicket);
-			break;
-			
-		}
 
 
-
-		case 'r':
-		{
-			char option = 'a';
-			int ticketnum = 0;
-			cout << "How many tickets would you like?: ";
-			cin >> ticketnum;
-			cout << "do you want to see all tickets or just winning tickets(input a or j): ";
-			cin >> option;
-
-			vector<PowerBallTicket> randTicket(ticketnum);
-			
-			for (int i = 0; i < ticketnum; i++)
+			case 'r':
 			{
-				totalWin = totalWin + randTicket.at(i).WinningTicket(WinTicket);
-				ticketPri = ticketPri + 2;
-				if (option == 'a')
+				char option = 'a';
+				int ticketnum = 0;
+				cout << "How many tickets would you like?: ";
+				cin >> ticketnum;
+				cout << "do you want to see all tickets or just winning tickets(input a or j): ";
+				cin >> option;
+
+				vector<PowerBallTicket> randTicket(ticketnum);
+				
+				for (int i = 0; i < ticketnum; i++)
 				{
-					cout << "Ticket # is : ";
-					for (int j = 0; j < 5; j++)
+					totalWin = totalWin + randTicket.at(i).WinningTicket(WinTicket);
+					ticketPri = ticketPri + 2;
+					if (option == 'a')
 					{
-						cout << randTicket.at(i).getwhiteBall(j) << '-';
-					}
-					cout << "Red: " << randTicket.at(i).getredBall() << endl;
-				}
-				else if (option == 'j')
-				{
-					if (randTicket.at(i).WinningTicket(WinTicket) != 0)
-					{
-						cout << "Winning ticket is:";
+						cout << "Ticket # is : ";
 						for (int j = 0; j < 5; j++)
 						{
 							cout << randTicket.at(i).getwhiteBall(j) << '-';
 						}
-						cout << " Red:" << randTicket.at(i).getredBall() << " and Amount: ";
-						cout << randTicket.at(i).WinningTicket(WinTicket) << endl;
+						cout << "Red: " << randTicket.at(i).getredBall() << endl;
+					}
+					else if (option == 'j')
+					{
+						if (randTicket.at(i).WinningTicket(WinTicket) != 0)
+						{
+							cout << "Winning ticket is:";
+							for (int j = 0; j < 5; j++)
+							{
+								cout << randTicket.at(i).getwhiteBall(j) << '-';
+							}
+							cout << " Red:" << randTicket.at(i).getredBall() << " and Amount: ";
+							cout << randTicket.at(i).WinningTicket(WinTicket) << endl;
+						}
 					}
 				}
+				break;
+			  }
 			}
-			break;
-		  }
-		
-
-		}
+			
 	} while (choice != 'q');
 		cout << "You won: " << totalWin << "$" << endl;
 		cout << "You spent: " << ticketPri << endl;
