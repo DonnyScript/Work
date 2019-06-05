@@ -11,6 +11,7 @@
 #define CHECK_H
 #include <iostream>
 using namespace std;
+
 int checkInt(int& input)// To use set your int in main equal to this with that int as inputa parameter 
 {
 	while (cin.fail())
@@ -22,6 +23,7 @@ int checkInt(int& input)// To use set your int in main equal to this with that i
 	}
 	return input;
 }
+
 double checkDouble(double input)
 {
 	while (cin.fail())
