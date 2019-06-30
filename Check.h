@@ -6,13 +6,12 @@
 //  Copyright © 2019 Donovan Mccarthy. All rights reserved.
 //
 
-
 #ifndef CHECK_H
 #define CHECK_H
 #include <iostream>
 using namespace std;
 
-int checkInt(int& input)// To use set your int in main equal to this with that int as inputa parameter 
+void check(int& input)// To use set call with what you want to check at the parameter
 {
 	while (cin.fail())
 	{
@@ -21,10 +20,9 @@ int checkInt(int& input)// To use set your int in main equal to this with that i
 		cin.ignore(100, '\n');
 		cin >> input;
 	}
-	return input;
 }
 
-double checkDouble(double input)
+void checkDouble(double& input)
 {
 	while (cin.fail())
 	{
@@ -33,7 +31,7 @@ double checkDouble(double input)
 		cin.ignore(100, '\n');
 		cin >> input;
 	}
-return input;
+
 }
 
 
