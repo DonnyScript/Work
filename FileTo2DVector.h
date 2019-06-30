@@ -1,3 +1,9 @@
+#include <iostream> 
+#include <vector> 
+#include <fstream> 
+#include <string> 
+using namespace std;
+
 void fillVector(string filename, vector<vector<char>>& inputMaze)// Tun this into member function
 {
 	string tempLn;
