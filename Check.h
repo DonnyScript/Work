@@ -47,7 +47,7 @@ void checkString(string& input)
 
 }
 
-void checkChar(string& input)
+void checkChar(char& input)
 {
 	while (cin.fail())
 	{
