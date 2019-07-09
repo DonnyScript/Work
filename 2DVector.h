@@ -30,6 +30,19 @@ void printVector()//Currently setup to print a 2D vector called Maze
 	}
 
 
+	void printVector(vector<vector<char>> inputVector) 
+	{
+		for (int row = 0; row < inputVector.size(); row++)
+		{
+			for (int colum = 0; colum < inputVector.at(row).size(); colum++)
+			{
+				cout << inputVector.at(row).at(colum);
+			}
+			cout << endl;
+		}
+	}
+
+
 	bool findPath(int x, int y)//Pathfinder that uses a 2D vector 
 	{
 		if((x < 0) || (y < 0) || (x >= Maze.size()) || (y >= Maze.at(x).size()) )
