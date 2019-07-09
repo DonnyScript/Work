@@ -58,6 +58,16 @@ void checkChar(char& input)
 	}
 }
 
-
+template <typename dynType> //This one is universal, but as of 7/09/19 it is un-tested  k
+dynType checkInput(dynType input)
+{
+	while (cin.fail())
+	{
+		cout << "Put valid number: ";
+		cin.clear();
+		cin.ignore(100, '\n');
+		cin >> input;
+	}
+}
 
 #endif // !CHECK_H
