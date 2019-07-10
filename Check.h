@@ -1,9 +1,8 @@
-//
 //  CheckingFunction's.h
 //  Work       
 //
 //  Created by Donovan McCarthy on 5/6/19  
-//  Copyright © 2019 Donovan Mccarthy. All rights reserved.
+//  Copyright © 2019 Donovan McCarthy. All rights reserved.
 //
 
 #ifndef CHECK_H
