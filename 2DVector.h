@@ -16,20 +16,6 @@ void fillVector(string filename, vector<vector<char>>& inputMaze)// Tun this int
 	}
 }
 
-
-void printVector()//Currently setup to print a 2D vector called Maze
-	{
-		for (int row = 0; row < 9; row++)
-		{
-			for (int colum = 0; colum < 9; colum++)
-			{
-				cout << Maze.at(row).at(colum);
-			}
-			cout << endl;
-		}
-	}
-
-
 	void printVector(vector<vector<char>> inputVector) 
 	{
 		for (int row = 0; row < inputVector.size(); row++)
