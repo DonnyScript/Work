@@ -58,7 +58,7 @@ void checkChar(char& input)
 }
 
 template <typename DynamicType> //This one is universal, but as of 7/09/19 it is un-tested  
-DynamicType checkInput(DynamicType input)
+DynamicType checkInput(DynamicType& input)
 {
 	while (cin.fail())
 	{
