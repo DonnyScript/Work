@@ -30,7 +30,7 @@ int main()
 /*NOTE: to make a return or get the same affect as hitting return put \n at the end like: "Hello, World! \n" */
 /* What we just did is output a string to the console output when you put something between " " it becomes a string.
  We can also create variables and give them values, so it makes our program more easy to understand, for example:  */
- #include <iostream> 
+#include <iostream> 
 using namespace std;
 
 int main() 
@@ -40,7 +40,7 @@ int main()
     return 0;   
 }
 /*This is called declaring a variable, we can assign a value when we declare it like so. */
- #include <iostream> 
+#include <iostream> 
 using namespace std;
 
 int main() 
@@ -51,8 +51,8 @@ int main()
 }
 /*This variable is called an integer which can only store values without decimals including negatives, another king of variable which you already used is called 
 a string which holds phrases, and is made up of multiple characters, when we use a string we have to include the "string" library*/
- #include <iostream> 
- #include <string> //When using a string add this 
+#include <iostream> 
+#include <string> //When using a string add this 
 using namespace std;
 
 int main() 
@@ -64,7 +64,7 @@ int main()
 /*Now lets talk about how to input values, to input values we use something called "cin" and after you write cin you need to put ">>" after. The program below
 asks for your name then you input whatever you want then it says hi to you */
 #include <iostream> 
- #include <string> //When using a string add this 
+#include <string> //When using a string add this 
 using namespace std;
 
 int main() 
