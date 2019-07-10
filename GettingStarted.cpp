@@ -72,7 +72,7 @@ int main()
     string name; //make the variable to store our name 
     cout << "What is your name: ";//Ask for it 
     cin  >> name; // Type your name to store it 
-    cout << "HI " << name << '\n';
+    cout << "Hi " << name << '\n';
 
     return 0;   
 }
