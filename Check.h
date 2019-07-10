@@ -57,7 +57,7 @@ void checkChar(char& input)
 	}
 }
 
-template <typename DynamicType> //This one is universal, but as of 7/09/19 it is un-tested  
+template <typename DynamicType> //This one is universal, put after you assign value
 DynamicType checkInput(DynamicType& input)
 {
 	while (cin.fail())
