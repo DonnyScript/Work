@@ -10,10 +10,12 @@ class Node
 private:
     DynamicType value;
     Node<DynamicType>* nextNodePtr;
+    int numberOfItems;
 public:
 
     Node(DynamicType value = 0, Node* nextPtr = nullptr)
     {
+        numberOfItems = 0; 
         this->value = value;
         this->nextNodePtr = nextPtr;
     }
