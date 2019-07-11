@@ -4,7 +4,7 @@
 #include <iostream> 
 using namespace std;
 
-template <typename DynamicType> //As up 7/11/19 it has been tested, might upload a source.cpp file on how to use 
+template <typename DynamicType> //As up 7/11/19 it has been tested
 class Node
 {
 private:
