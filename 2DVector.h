@@ -73,3 +73,99 @@ void fillVector(string filename, vector<vector<char>>& inputMaze)// Tun this int
 
 	}
 };
+
+
+/*This is another maze solver function with two checkers, it is ment to be used it a class and a 2D Vector named Maze*/
+bool isOpen(int x, int y)
+	{
+		if (Maze.at(x).at(y) == open)
+		{
+			return true;
+		}
+
+		if (Maze.at(x).at(y) == end)
+		{
+			return true;
+		}
+
+		return false;
+	}
+
+	bool validMove(int x, int y)
+	{
+		if (x > 0 && y > 0 && x < Maze.size() && y < Maze.at(x).size())
+		{
+			return true;
+		}
+		return false;
+	}
+
+	void solve(int x, int y)
+	{
+		if (Maze.at(x).at(y) == end)
+		{
+			if (moveCounter < minDis)
+			{
+				minDis = moveCounter;
+			}
+			
+			cout << moveCounter << endl;
+			moveCounter++;
+		}
+
+		if (Maze.at(x).at(y) == start)
+		{
+			
+			moveCounter++;
+		}
+
+		if( validMove(x - 1, y) && isOpen(x -1, y))
+		{
+			if(Maze.at(x -1).at(y) != end)
+			{
+				Maze.at(x - 1).at(y) = path;
+			}
+			moveCounter++;
+			solve(x-1,y);
+			moveCounter--;
+			Maze.at(x).at(y) = open;
+		}
+
+		if(validMove(x, y + 1) && isOpen(x,y + 1))
+		{
+			if(Maze.at(x).at(y + 1) != end)
+			{
+				Maze.at(x).at(y + 1) = path;
+			}
+			moveCounter++;
+			solve(x,y + 1);
+			moveCounter--;
+			Maze.at(x).at(y) = open;	
+		}
+
+
+		if (validMove(x + 1, y) && isOpen(x + 1, y))
+		{
+			if (Maze.at(x + 1).at(y) != end)
+			{
+				Maze.at(x + 1).at(y) = path;
+			}
+			moveCounter++;
+			solve(x + 1, y);
+			moveCounter--;
+			Maze.at(x).at(y) = open;
+		}
+
+		if(validMove(x, y - 1) && isOpen(x,y - 1))
+		{
+			if(Maze.at(x).at(y - 1) != end)
+			{
+				Maze.at(x).at(y - 1) = path;
+			}
+			moveCounter++;
+			solve(x,y - 1);
+			moveCounter--;
+			Maze.at(x).at(y) = open;	
+		}
+	}
+};
