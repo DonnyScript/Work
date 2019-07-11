@@ -4,18 +4,20 @@
 #include <iostream> 
 using namespace std;
 
-template <typename DynamicType>
+template <typename DynamicType> //As up 7/11/19 it has been tested, might upload a source.cpp file on how to use 
 class Node
 {
 private:
     DynamicType value;
     Node<DynamicType>* nextNodePtr;
 public:
+
     Node(DynamicType value = 0, Node* nextPtr = nullptr)
     {
         this->value = value;
         this->nextNodePtr = nextPtr;
     }
+
     void insertAfter(Node* nextNode)
     {
         Node* tempPtr = nullptr;
@@ -24,26 +26,21 @@ public:
         this->nextNodePtr = nextNode;
         nextNode->nextNodePtr =  tempPtr;
     }
+
     DynamicType getValue()
     {
         return this->value;
     }
+
 	DynamicType getNextNodePtr()
 	{
 		return this->nextNodePtr;
 	}
+
 	DynamicType printNodeValue()
 	{
 		return this->value;
 	}
 };
-
-
-
-
-
-
-
-
 
 #endif
