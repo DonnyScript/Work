@@ -9,25 +9,33 @@ class Node
 {
 private:
     DynamicType value;
-    DynamicType* nextValuePtr;
+    Node<DynamicType>* nextNodePtr;
 public:
-    Node(DynamicType value = 0, DynamicType* nextPtr = nullptr)
+    Node(DynamicType value = 0, Node* nextPtr = nullptr)
     {
         this->value = value;
-        this->nextNode = nextPtr;
+        this->nextNodePtr = nextPtr;
     }
-    void nextNode(Node* nextNode)
+    void insertAfter(Node* nextNode)
     {
         Node* tempPtr = nullptr;
 
-        tempPtr = this->nextValuePtr;
-        this->nextValuePtr = nextNode;
-        nextNode->nextValuePtr =  tempPtr;
+        tempPtr = this->nextNodePtr;
+        this->nextNodePtr = nextNode;
+        nextNode->nextNodePtr =  tempPtr;
     }
     DynamicType getValue()
     {
         return this->value;
     }
+	DynamicType getNextNodePtr()
+	{
+		return this->nextNodePtr;
+	}
+	DynamicType printNodeValue()
+	{
+		return this->value;
+	}
 };
 
 
