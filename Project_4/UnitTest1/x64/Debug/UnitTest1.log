@@ -1,0 +1,5 @@
+﻿  pch.cpp
+  UnitTest1.cpp
+C:\Users\donny\Documents\GitHub\CIS200-Summer2019-DonnyScript\Project_4\Project_4\Initial_Train.h(20,1): warning C4267:  'initializing': conversion from 'size_t' to 'int', possible loss of data
+     Creating library C:\Users\donny\Documents\GitHub\CIS200-Summer2019-DonnyScript\Project_4\x64\Debug\UnitTest1.lib and object C:\Users\donny\Documents\GitHub\CIS200-Summer2019-DonnyScript\Project_4\x64\Debug\UnitTest1.exp
+  UnitTest1.vcxproj -> C:\Users\donny\Documents\GitHub\CIS200-Summer2019-DonnyScript\Project_4\x64\Debug\UnitTest1.dll
