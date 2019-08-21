@@ -1,0 +1,12 @@
+﻿  Source.cpp
+C:\Users\Donovan\Documents\GitHub\CIS200GroupProject\GroupProject\GroupProject\BlackJack.h(214,27): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Donovan\Documents\GitHub\CIS200GroupProject\GroupProject\GroupProject\BlackJack.h(350,35): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Donovan\Documents\GitHub\CIS200GroupProject\GroupProject\GroupProject\BlackJack.h(363,13): warning C4244:  'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Donovan\Documents\GitHub\CIS200GroupProject\GroupProject\GroupProject\BlackJack.h(446,38): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Donovan\Documents\GitHub\CIS200GroupProject\GroupProject\GroupProject\BlackJack.h(528,26): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Donovan\Documents\GitHub\CIS200GroupProject\GroupProject\GroupProject\BlackJack.h(643,26): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Donovan\Documents\GitHub\CIS200GroupProject\GroupProject\GroupProject\BlackJack.h(750,42): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Donovan\Documents\GitHub\CIS200GroupProject\GroupProject\GroupProject\Source.cpp(22,25): warning C4018:  '<=': signed/unsigned mismatch
+C:\Users\Donovan\Documents\GitHub\CIS200GroupProject\GroupProject\GroupProject\Source.cpp(102,31): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Donovan\Documents\GitHub\CIS200GroupProject\GroupProject\GroupProject\Source.cpp(130,32): warning C4018:  '<': signed/unsigned mismatch
+  GroupProject.vcxproj -> C:\Users\Donovan\Documents\GitHub\CIS200GroupProject\GroupProject\Debug\GroupProject.exe

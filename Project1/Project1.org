@@ -1,0 +1,30 @@
+#+TITLE: Project 2 checklist 
+
+* Progress: [24/24] [100%]
+ - [X] Use of Alignment Enum type
+ - [X] Ship Base Class - no public variables 
+   - uses protected or public methods to access values
+ - [X] Ship Base Class - virtual attack method accepts ship pointer as a target
+ - [X] Ship Base Class- private virtual getType() - all subclasses override correctly
+ - [X] Ship Base Class - virtual move functions correctly
+ - [X] Ship Base Class - virtual status returns correct value
+ - [X] Ship uses constructor with arguments and does not have a no argument constructor
+ - [X] Ship Base Class - change align works correctly
+ - [X] Ship Base Class - assessDamage functions correctly
+ - [X] Attack method only successfully attacks targets within range
+ - [X] Battleship - torpedoes function correctly
+ - [X] Battleship - status includes torpedoes
+ - [X] Battleship - inherits from Ship
+ - [X] Cruiser - inherits from Ship
+ - [X] Corvette - Inherits from Ship
+ - [X] Corvette - attack method converts us to them and them to us if the target
+                    was the opposite alignment
+ - [X] Repairship - Inherits from Cruiser
+ - [X] Repairship - attack properly heals same team ships not at 0 health
+ - [X] Move method throws an exception if the ship is at 0 health
+ - [X] Ship - Unit Tests
+ - [X] Battleship - Unit Tests
+ - [X] Cruiser - Unit Tests
+ - [X] Repairship - Unit Tests
+ - [X] Corvette - Unit Tests
+

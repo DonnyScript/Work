@@ -1,0 +1,12 @@
+﻿  Source.cpp
+C:\Users\Donovan\source\repos\SortPractice\SortPractice\Source.cpp(10,22): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Donovan\source\repos\SortPractice\SortPractice\Source.cpp(28,16): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Donovan\source\repos\SortPractice\SortPractice\Source.cpp(31,21): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Donovan\source\repos\SortPractice\SortPractice\Source.cpp(174,20): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Donovan\source\repos\SortPractice\SortPractice\Source.cpp(149,36): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Donovan\source\repos\SortPractice\SortPractice\Source.cpp(172): message :  see reference to function template instantiation 'std::vector<int,std::allocator<_Ty>> MergeSort<int>(std::vector<_Ty,std::allocator<_Ty>> &)' being compiled
+C:\Users\Donovan\source\repos\SortPractice\SortPractice\Source.cpp(172): message :         with
+C:\Users\Donovan\source\repos\SortPractice\SortPractice\Source.cpp(172): message :         [
+C:\Users\Donovan\source\repos\SortPractice\SortPractice\Source.cpp(172): message :             _Ty=int
+C:\Users\Donovan\source\repos\SortPractice\SortPractice\Source.cpp(172): message :         ]
+  SortPractice.vcxproj -> C:\Users\Donovan\source\repos\SortPractice\Debug\SortPractice.exe

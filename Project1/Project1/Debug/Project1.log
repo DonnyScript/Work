@@ -1,0 +1,8 @@
+﻿  Source.cpp
+C:\Users\Donovan\Documents\GitHub\CIS200-Summer2019-DonnyScript\Project1\Project1\trekwar.h(101,20): warning C4244:  '=': conversion from 'double' to 'int', possible loss of data
+  trekwar.cpp
+C:\Users\Donovan\Documents\GitHub\CIS200-Summer2019-DonnyScript\Project1\Project1\trekwar.h(151,1): warning C4804:  '<': unsafe use of type 'bool' in operation
+C:\Users\Donovan\Documents\GitHub\CIS200-Summer2019-DonnyScript\Project1\Project1\trekwar.h(101,20): warning C4244:  '=': conversion from 'double' to 'int', possible loss of data
+  Generating Code...
+C:\Users\Donovan\Documents\GitHub\CIS200-Summer2019-DonnyScript\Project1\Project1\trekwar.h(151,1): warning C4804:  '<': unsafe use of type 'bool' in operation
+  Project1.vcxproj -> C:\Users\Donovan\Documents\GitHub\CIS200-Summer2019-DonnyScript\Project1\Debug\Project1.exe
