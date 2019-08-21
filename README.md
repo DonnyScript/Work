@@ -1,2 +1,2 @@
 # Work
-To use put into your directory with your source file and then include in IDE/texteditor
+This is a collection of work and usefull function I use when programming 
