@@ -1,2 +1,2 @@
 # Work
-This is a collection of work and usefull function I use when programming 
+This is a collection of work and usefull functions I use when programming 
